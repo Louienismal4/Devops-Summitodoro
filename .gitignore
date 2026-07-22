@@ -1,0 +1,14 @@
+node_modules/
+.next/
+out/
+coverage/
+playwright-report/
+test-results/
+.env*
+!.env.example
+*.tsbuildinfo
+.DS_Store
+supabase/*
+!supabase/migrations/*
+!supabase/migrations/*.sql
+*.md
