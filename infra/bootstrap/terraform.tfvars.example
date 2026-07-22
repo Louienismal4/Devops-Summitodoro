@@ -1,6 +1,8 @@
 aws_region        = "ap-southeast-1"
 aws_account_id    = "REPLACE_WITH_AWS_ACCOUNT_ID"
 state_bucket_name = "REPLACE_WITH_UNIQUE_SUMMITODORO_TF_STATE_BUCKET"
+audit_log_bucket_name = "REPLACE_WITH_UNIQUE_SUMMITODORO_AUDIT_LOG_BUCKET"
+github_repository    = "REPLACE_WITH_GITHUB_OWNER/REPOSITORY"
 terraform_role_arns = [
   "arn:aws:iam::REPLACE_WITH_AWS_ACCOUNT_ID:role/summitodoro-terraform-development",
 ]

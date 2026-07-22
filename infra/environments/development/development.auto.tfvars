@@ -1,0 +1,8 @@
+aws_region  = "ap-southeast-1"
+owner       = "Louie Nismal"
+cost_center = "personal-project"
+
+vpc_cidr             = "10.40.0.0/16"
+availability_zones   = ["ap-southeast-1a", "ap-southeast-1b"]
+public_subnet_cidrs  = ["10.40.0.0/24", "10.40.1.0/24"]
+private_subnet_cidrs = ["10.40.10.0/24", "10.40.11.0/24"]

@@ -3,5 +3,7 @@
 *.tfstate.*
 *.tfvars
 !*.tfvars.example
+!environments/development/development.auto.tfvars
 tfplan
+*.tfplan
 backend.hcl
