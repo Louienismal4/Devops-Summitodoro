@@ -8,6 +8,28 @@ variable "aws_account_id" {
   description = "AWS account ID that owns the Terraform state bucket."
 }
 
+variable "audit_log_bucket_name" {
+  type        = string
+  description = "Globally unique S3 bucket name for CloudTrail audit logs."
+}
+
+variable "audit_log_retention_days" {
+  type        = number
+  description = "Number of days CloudTrail audit logs are retained in S3."
+  default     = 365
+}
+
+variable "audit_trail_name" {
+  type        = string
+  description = "Name of the account-level CloudTrail trail."
+  default     = "summitodoro-shared-audit"
+}
+
+variable "github_repository" {
+  type        = string
+  description = "GitHub owner/repository trusted to assume Terraform OIDC roles."
+}
+
 variable "state_bucket_name" {
   type        = string
   description = "Globally unique S3 bucket name for Terraform state."
