@@ -133,4 +133,7 @@ jobs:
     steps:
       - env:
           GH_TOKEN: ${{ github.token }}
-        run: gh issue create --title "Terraform drift detected: development" --body "Weekly Terraform drift detection found unexpected differences. Review the scheduled Terraform workflow and reconcile through a reviewed plan."
+        run: |
+          gh issue create \
+            --title "Terraform drift detected: development" \
+            --body "Weekly Terraform drift detection found unexpected differences. Review the scheduled Terraform workflow and reconcile through a reviewed plan."
