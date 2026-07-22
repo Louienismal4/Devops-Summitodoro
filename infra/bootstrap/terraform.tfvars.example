@@ -1,0 +1,14 @@
+aws_region        = "ap-southeast-1"
+aws_account_id    = "REPLACE_WITH_AWS_ACCOUNT_ID"
+state_bucket_name = "REPLACE_WITH_UNIQUE_SUMMITODORO_TF_STATE_BUCKET"
+terraform_role_arns = [
+  "arn:aws:iam::REPLACE_WITH_AWS_ACCOUNT_ID:role/summitodoro-terraform-development",
+]
+
+tags = {
+  application = "summitodoro"
+  environment = "shared"
+  owner       = "Louie Nismal"
+  managed-by  = "terraform"
+  cost-center = "personal-project"
+}
